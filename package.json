@@ -1,0 +1,15 @@
+{
+  "name": "rapport",
+  "version": "2.0.0",
+  "private": true,
+  "description": "Rapport (تفاهُم): bilingual team assessments (DISC, 16 Types, Big Five) with a lead dashboard, development plans and per-member exports.",
+  "type": "module",
+  "engines": {
+    "node": ">=18",
+    "php": ">=8.1"
+  },
+  "scripts": {
+    "dev": "php -S localhost:8000 -t public server/dev-router.php",
+    "test": "node --test tests/scoring.test.mjs && php tests/api_test.php"
+  }
+}
